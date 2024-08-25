@@ -1,0 +1,80 @@
+/* src/assets/css/ProjectIntroduction.css */
+.project-introduction {
+    padding: 50px;
+    background-color: #f8fff8;
+    box-shadow: 0 8px 16px rgba(72, 184, 127, 0.6); 
+    border-radius: 100PX;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .section-description {
+    font-size: 35px;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #555;
+    text-align: center;
+  }
+  
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  
+  .project-cards.visible {
+    opacity: 1;
+  }
+  
+  .project-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(72, 184, 127, 0.2); 
+    transition: transform 0.3s ease;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .card-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 128, 0, 0.7); /* Greenish shadow */
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  

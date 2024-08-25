@@ -1,0 +1,66 @@
+/* src/assets/css/CallToAction.css */
+.call-to-action {
+  background-color: #d4edda; /* Light green color */
+  color: #333;
+  padding: 80px 20px; /* Added 20px padding on the sides */
+  border-radius: 100px;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-image {
+  flex: 1;
+  margin-right: 50px; 
+}
+
+.cta-image img {
+  width: 100%;
+
+  border-radius: 8px;
+}
+
+.cta-content {
+  flex: 2;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-description {
+  font-size: 20px;
+  margin: 0 auto 40px; /* Centered and limited width */
+  max-width: 600px; /* Adjust the maximum width as needed */
+}
+
+.explore-button {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #28a745; /* Green color */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  animation: blink 3s infinite;
+}
+
+.explore-button:hover {
+  background-color: #218838; /* Darker green color on hover */
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.6;
+  }
+}
